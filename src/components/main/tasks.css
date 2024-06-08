@@ -1,0 +1,36 @@
+.tasks {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 40px;
+}
+
+.task {
+    width: 250px;
+    min-height: 70vh;
+    padding: 30px;
+    border: 1px solid rgb(229, 222, 222);
+    border-radius: 10px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.item {
+    max-width: 250px;
+    min-height: 30px;
+    border: 1px solid rgb(229, 222, 222);
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.btns {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}

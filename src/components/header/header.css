@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 20px;
+    border-bottom: 1px solid black;
+    margin: 0 ;
+    background-color: rgb(28, 26, 26);
+}
+
+.add_task {
+    
+}
+
+.add_task input {
+    width: 300px;
+    padding: 5px 15px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.add_task button {
+    padding: 5px 15px;
+    margin-left: 5px;
+}
