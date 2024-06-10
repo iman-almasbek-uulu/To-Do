@@ -1,18 +1,28 @@
 import "../../tasks.css"
 
 const TaskItem = (props) => {
-    debugger;
+    // debugger;
+    const addText = (text,i,state) => {
+        if (state === "todo") {
+            props.doing(text,i);
+
+        }
+        if (state === "doing") {
+            props.complete(text,i);
+        }
+        console.log(props);
+    }
 
     return (
         props.list.map((item,i) => {
             return (
-                <li className="item">
+                <li key={i} className="item">
                     <div>
-                        <button className="btns">+</button>
-                        <button className="btns">-</button>
+                        <button className="btns" onClick={() => {addText(item.text,i,item.state)}}> <img src="./add.png" alt="add" /> </button>
+                        <button className="btns"><img src="./repaire.png" alt="repaire" /></button>
                     </div>
-                    <span>{item}</span>
-                    <button className="btns">x</button>
+                    <span>{item.text}</span>
+                    <button className="btns"> <img src="./delete.png" alt="delete" /></button>
                 </li>
             )
         })

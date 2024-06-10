@@ -4,8 +4,8 @@ import "./tasks.css"
 const Tasks = (props) => {
     return (
         <div className="tasks">
-            <Task list={props.state.listToDo} />
-            <Task list={props.state.listDoing} />
+            <Task list={props.state.listToDo} doing={props.doing}  />
+            <Task list={props.state.listDoing} complete={props.complete} />
             <Task list={props.state.listCompleted} />
         </div>
     );

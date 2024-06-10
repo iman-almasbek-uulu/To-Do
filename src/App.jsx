@@ -6,9 +6,12 @@ function App(props) {
 
   return (
     <div>
-      <Header />
+      <Header state={props.state.listToDo.list} addText={props.addText}/>
       <div className="container">
-        <Tasks state={props.state} />
+        <Tasks state={props.state} 
+          doing={props.doing}
+          complete={props.complete}
+        />
       </div>
     </div>
   )
